@@ -1,0 +1,97 @@
+.body {
+  background-color: whitesmoke;
+}
+.header{
+  display: flex;
+  height: 7%;
+  text-align: center;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  color: white;
+  background: black;
+}
+.logo-text{
+  margin: 7% auto 2% 3%;
+  font-size: 130%;
+  font-family: 'Times New Roman', Times, serif;
+  background: inherit;
+  color: whitesmoke;
+}
+.logo-text::before{
+  content: "][";
+  margin: -6% auto 0 6.2%;
+  text-align: center;
+  font-size: 115%;
+  color: whitesmoke;
+  position: absolute;
+}
+.nav-button{
+  height: 50px;
+  width: 50px;
+  margin-top: 2%;
+  margin-right: 2%;
+  text-align: center;
+}
+.nav-block{
+  display: none;
+  position: fixed;
+  text-align: left;
+  opacity: 0.95;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 40%;
+  z-index: 3;
+  background: black;
+}
+nav ul div{
+  margin: 2% 2% 2% auto;
+  text-align: right;
+}
+nav ul a{
+  background: inherit;
+  display: block;
+  color: black;
+  padding: 8% 0;
+  text-align: left;
+  list-style: none;
+  text-decoration: none;
+}
+nav ul a li{
+  opacity: 1;
+  color: whitesmoke;
+}
+.Eintro{
+  position: absolute;
+  z-index: 2;
+  font-size: 120%;
+  color: white;
+  font-weight: bold;
+  margin: 30% 15% auto 5%;
+}
+.wwr{
+  position: absolute;
+  z-index: 2;
+  font-size: 110%;
+  color: white;
+  font-weight: bold;
+  margin: 25% 15% auto 5%;
+}
+.cr{
+  position: absolute;
+  z-index: 2;
+  font-size: 110%;
+  color: white;
+  font-weight: bold;
+  margin: 40% 10% auto 5%;
+}
+.filter{
+  display: block;
+  position:absolute;
+  background: black;
+  height:100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 1;
+}
