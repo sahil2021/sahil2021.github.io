@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+body{
+    font-size: 15pt;
+    height: 500vh;
+    width: 100vw;
+    font-family: 'Ubuntu';
+}
+.e{
+  font-size: 22px;
+  color: #efefef;
+  font-weight: bolder;
+}
+.nvics{
+  font-size: 1px;
+  color: #efefef;
+  font-weight: bolder;
+}
+.home_div{
+  display: flex;
+  flex-flow: row;
+  height: 100vh;
+  width: 100vw;
+}
+.div1{
+  display: block;
+  background: #051e3e;
+  height: 100vh;
+  width: 50vw;
+  
+  padding-top: 34vh;
+  
+}
+.div1_text{
+   position: absolute;
+   color: #c51e3e;
+   margin-left: 19vw;
+   font-family: 'Lucida Sans';
+   font-size: 55px;
+}
+.div2{
+  display: block;
+  background: #c51e3e;
+  height: 100vh;
+  width: 50vw;
+  
+  padding-top: 20vh;
+  
+}
+.div2_text1{
+   position: block;
+   color: #001e3e;
+   margin-left: 2vw;
+   font-size: 31px;
+   animation-name: opanim;
+   animation-duration: 4s;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+}
+.div2_text2{
+   position: block;
+   color: #001e3e;
+   margin-left: 2vw;
+   font-size: 34px;
+   animation-name: opanim;
+   animation-duration: 4s;
+   animation-delay: 5s;
+   animation-iteration-count: infinite;
+}
+.div2_text3{
+   position: block;
+   color: #001e3e;
+   margin-left: 2.4vw;
+   font-size: 27px;
+   animation-name: opanim;
+   animation-duration: 4s;
+   animation-delay: 7s;
+   animation-iteration-count: infinite;
+}
+.est{
+  position: absolute;
+  display:none;
+  text-align: center;
+  background:linear-gradient(90deg, #ffffff,#ffffff,#ffffff,#ffffff,#c51e3e);
+  margin-top: 55vh;
+  padding-right: 10vw;
+  height: 5vh;
+  width: 60vw;
+  font-family: 'Lucida Sans';
+  font-weight: 300;
+  font-size: 25px;
+  vertical-align: middle;
+  z-index: 3;
+}
+
+@media only screen and (min-width: 600px) and (min-height: 300px){
+  .e {
+    font-size: 35px;
+    color: #efefef;
+    font-weight: bolder;
+  }
+  .div1_text {
+    color: #c51e3e;
+    margin-right: 2vw;
+    font-size: 100px;
+    vertical-align: text-top;
+  }
+  .div2_text {
+    color: #001e3e;
+    vertical-align: text-bottom;
+    margin-left: 1vw;
+    font-size: 100px;
+  }
+}
+@keyframes opanim{
+  0% { opacity: 1.0;}
+  50% { opacity: 0.0;}
+  100% { opacity: 1.0;}
+}
