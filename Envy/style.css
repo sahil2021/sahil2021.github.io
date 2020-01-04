@@ -110,6 +110,101 @@ body{
     margin-left: 1vw;
     font-size: 100px;
   }
+    .div2_text1 {
+
+    position: block;
+
+    color: #001e3e;
+
+    margin-left: 2vw;
+
+    font-size: 70px;
+
+    animation-name: opanim;
+
+    animation-duration: 4s;
+
+    animation-delay: 2s;
+
+    animation-iteration-count: infinite;
+
+  }
+
+  
+
+  .div2_text2 {
+
+    position: block;
+
+    color: #001e3e;
+
+    margin-left: 2vw;
+
+    font-size: 66px;
+
+    animation-name: opanim;
+
+    animation-duration: 4s;
+
+    animation-delay: 5s;
+
+    animation-iteration-count: infinite;
+
+  }
+
+  
+
+  .div2_text3 {
+
+    position: block;
+
+    color: #001e3e;
+
+    margin-left: 2.4vw;
+
+    font-size: 60px;
+
+    animation-name: opanim;
+
+    animation-duration: 4s;
+
+    animation-delay: 7s;
+
+    animation-iteration-count: infinite;
+
+  }
+
+  
+
+  .est {
+
+    position: absolute;
+
+    display: none;
+
+    text-align: center;
+
+    background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff, #ffffff, #c51e3e);
+
+    margin-top: 55vh;
+
+    padding-right: 10vw;
+
+    height: 3vh;
+
+    width: 60vw;
+
+    font-family: 'Lucida Sans';
+
+    font-weight: 300;
+
+    font-size: 70px;
+
+    vertical-align: middle;
+
+    z-index: 3;
+
+  }
 }
 @keyframes opanim{
   0% { opacity: 1.0;}
