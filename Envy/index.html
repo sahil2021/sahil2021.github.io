@@ -19,11 +19,13 @@
 </head>
 
 <body>
-  <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-image: linear-gradient(90deg, #f01e3e, #001e3e); width: 100vw;">
+  <p style="display:none;" id="root">th,fg,fg;</p>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background: linear-gradient(135deg,#000000,#000000); width: 100vw;">
     <a class="navbar-brand" href="#" style="font-family: 'Ubuntu';">
      <b class="e" id="e">ENVICS</b></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: #555555; background-color: #001e3e; outline: none;">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: #c1c1c1; background:none;outline: none;">
+      <span class="navbar-toggler-icon" style=" : black;"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
@@ -31,69 +33,96 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Who we're ?</a>
+          <a class="nav-link" href="#">About Us</a>
         </li>
         
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Our Services
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Our Expertise
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #151e3e; border: solid 0.25px #451e3e">
+          <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #151e3e; border: solid 0.25px #451e3e">
             <a class="dropdown-item" href="#" style="color: #dddddd;">Web Development</a>
             <a class="dropdown-item" href="#" style="color: #dddddd;">Mobile Application Development</a>
             <div class="dropdown-divider" style="border-color: #dddddd"></div>
             <a class="dropdown-item" href="#" style="color: #dddddd;">Search Engine Optimization</a>
-          </div>
+          </div>-->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+     <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="What You Looking For?" aria-label="Search" style="background-color: #ffffff; border-color: white;">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #051e3e;border:solid 1px #f51e3e; color: #dddddd;">Search</button>
-      </form>
+      </form>-->
     </div>
   </nav>
   <div class="home_div">
     <div class="div1" id="div1">
-      <h1 class="div1_text" id="div1_text1">
-        We're
-      </h1>
-      <div class="est">2019</div>
+      <h1 class="div1_text" id="div1_text1">We're</h1>
+      <!--h2 class="qt">"Always Deliver<br> More Than Expected"</h2-->
     </div>
     <div class="div2" id="div2">
-      <h1 class="div2_text1" id="div2_text3">
-        PASSIONATE
+      <h1 class="div2_text1" id="hmdt1">
+        Passionate
       </h1>
-      <h1 class="div2_text2" id="div2_text2">
-        DEPENDABLE
+      <h1 class="div2_text3" id="hmdt2">
+        Decisive
       </h1>
-      <h1 class="div2_text1" id="div2_text1">
-        DECISIVE
+      <h1 class="div2_text2" id="hmdt3">
+        Dependable
       </h1>
-      <h1 class="div2_text3" id="div2_text3">
-        OPTIMISTIC
+      <h1 class="div2_text3" id="hmdt4">
+        Leaders
       </h1>
-      <h1 class="div2_text1" id="div2_text2">
-        CREATIVE
+      <h1 class="div2_text1" id="hmdt5">
+        Determined
       </h1>
-      <h1 class="div2_text3" id="div2_text2">
-        DETERMINED
+      <h1 class="div2_text2" id="hmdt6">
+        Creative
       </h1>
-      <h1 class="div2_text2" id="div2_text1">
-        DILIGENT
+      <h1 class="div2_text1" id="hmdt7">
+        Resourceful
       </h1>
-      <h1 class="div2_text3" id="div2_text2">
-        RESOURCEFUL
+      <h1 class="div2_text3" id="hmdt8">
+        Diligent
       </h1>
-      <h1 class="div2_text2" id="div2_text3">
-        VISIONARY
+      <h1 class="div2_text2" id="hmdt9">
+        Visionary
       </h1>
+       <h1 class="div2_text3" id="hmdt10">
+         Persistent
+       </h1>
+       <h1 class="div2_text2" id="hmdt11">
+         Optimistic
+       </h1>
     </div>
   </div>
-  
+<!--  <p class="txt" id="tag" style="position: absolute;display:block;border:solid 1px black; background-color: black; font-size:100px;color:blue;">Sahil</p>-->
+  <!--<div style="display:flex;">
+    <div style="display: block; background-color: black; height:50px ;width:50px;"></div>
+  </div>-->
+  <div class="au-m">
+    <div class="aum-h">About Us</div>
+    <div class="aum-c">
+      <p>Envics is a newly established organization with employees, who are experienced and well versed in thier respective field. </p>
+      <p>Employees with versatile expertise,we ensure our clients tha we will deliver product that's quite perfect in every aspect or Product that will say for itself.</p>
+    </div>
+    <div class="aum-h">Key Members</div>
+    <div class="aum-cr" id="aumcr">
+      <ul class="aumcr-ls" >
+        <li class="aumcrls-i">
+          <img src="images/test.jpg" alt="image">
+        </li>
+        <li class="aumcrls-i"></li>
+        <li class="aumcrls-i"></li>
+        <li class="aumcrls-i"></li>
+        <li class="aumcrls-i"></li>
+      </ul>
+    </div>
+  </div>
   <!-- Project -->
   <script src="main.js"></script>
+  <script src="rel_font.js"></script>
 </body>
 </html>
