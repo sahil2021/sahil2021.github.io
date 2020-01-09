@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:100,300,300i,400,400i,500,500i,700,700i&display=swap');
 body{
     font-size: 15pt;
-    height: 500vh;
     width: 100vw;
     font-family: 'Ubuntu';
+    background: linear-gradient(90deg,#000428,#004e92);
 }
 .e{
   font-size: 22px;
-  color: #efefef;
-  font-weight: bolder;
+  color: white;
+  font-weight: 500;
 }
 .nvics{
   font-size: 1px;
@@ -20,26 +20,34 @@ body{
   flex-flow: row;
   height: 100vh;
   width: 100vw;
+  
 }
 .div1{
   display: block;
-  background: #051e3e;
+  background: linear-gradient(45deg,#000428,#004e92);
   height: 100vh;
   width: 50vw;
+    
+  border-right: solid 4px #00001c;
   
-  padding-top: 34vh;
+  padding-top: 40vh;
+
+}
+.txt{
+  font-size: 25px;
   
 }
 .div1_text{
    position: absolute;
-   color: #c51e3e;
-   margin-left: 19vw;
-   font-family: 'Lucida Sans';
+   color: white;
+   margin-left: 18vw;
+   font-weight: 200;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular';
    font-size: 55px;
 }
 .div2{
   display: block;
-  background: #c51e3e;
+  background: linear-gradient(-45deg,#4b82b3,#99c9f2);
   height: 100vh;
   width: 50vw;
   
@@ -48,19 +56,24 @@ body{
 }
 .div2_text1{
    position: block;
-   color: #001e3e;
+   color: black;
+   font-weight: 300;
    margin-left: 2vw;
+   font-family: 'Ubuntu';
    font-size: 31px;
-   animation-name: opanim;
+   animation-name: opanim; 
    animation-duration: 4s;
-   animation-delay: 2s;
+   animation-delay: 0.2s;
    animation-iteration-count: infinite;
 }
 .div2_text2{
    position: block;
-   color: #001e3e;
+   color: black;
+   font-weight: 10;
    margin-left: 2vw;
-   font-size: 34px;
+   font-family: 'Ubuntu';
+   font-size: 34px; 
+   font-weight: 300;
    animation-name: opanim;
    animation-duration: 4s;
    animation-delay: 5s;
@@ -68,41 +81,83 @@ body{
 }
 .div2_text3{
    position: block;
-   color: #001e3e;
+   color: black;
    margin-left: 2.4vw;
+   font-family: 'Ubuntu';
    font-size: 27px;
-   animation-name: opanim;
+   animation-name: opanim; 
+   font-weight: 300;
    animation-duration: 4s;
    animation-delay: 7s;
    animation-iteration-count: infinite;
 }
-.est{
+.qt{
   position: absolute;
-  display:none;
+  color: white;
+  margin-top: 45vh;
+  margin-left: 1vw;
   text-align: center;
-  background:linear-gradient(90deg, #ffffff,#ffffff,#ffffff,#ffffff,#c51e3e);
-  margin-top: 55vh;
-  padding-right: 10vw;
-  height: 5vh;
-  width: 60vw;
-  font-family: 'Lucida Sans';
+  height: 30vh;
+  width: 50vw;
+  font-family: 'Ubuntu';
   font-weight: 300;
   font-size: 25px;
   vertical-align: middle;
   z-index: 3;
 }
-
+.au-m{
+  height: 100vh;
+  width: 100vw;
+  
+  padding-top: 15vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  border-top: solid 2px black;
+}
+.aum-h{
+  font-family: 'Ubuntu';
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.aum-c{
+  font-family: 'Ubuntu';
+  font-size: 18px;
+  color: white;
+  margin-top: 3vh;
+  font-weight: 100;
+  margin-left: 5vw;
+}
+.aum-cr{
+  margin-top: 3vh;
+}
+.aumcr-ls{
+  display: flex;
+  justify-content: space-between;
+}
+.aumcrls-i{
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  height: 20vh;
+  width: 40vw;
+  margin-right: 15vw;
+  margin-left: 15vw;
+}
+.aumcrls-i img{
+  height: 20vh;
+  width: 40vw;
+}
 @media only screen and (min-width: 600px) and (min-height: 300px){
   .e {
     font-size: 35px;
-    color: #efefef;
+    color: white;
     font-weight: bolder;
   }
-  .div1_text {
-    color: #c51e3e;
+  .div1_text{
+    color: whitesmoke;
     margin-right: 2vw;
-    font-size: 100px;
-    vertical-align: text-top;
+    font-size: 60px;
   }
   .div2_text {
     color: #001e3e;
@@ -110,104 +165,57 @@ body{
     margin-left: 1vw;
     font-size: 100px;
   }
-    .div2_text1 {
-
+  .div2_text1 {
     position: block;
-
-    color: #001e3e;
-
+    color: black;
     margin-left: 2vw;
-
-    font-size: 70px;
-
+    font-size: 69px;
     animation-name: opanim;
-
     animation-duration: 4s;
-
     animation-delay: 2s;
-
     animation-iteration-count: infinite;
-
   }
-
   
-
   .div2_text2 {
-
     position: block;
-
-    color: #001e3e;
-
+    color: black;
     margin-left: 2vw;
-
     font-size: 66px;
-
     animation-name: opanim;
-
     animation-duration: 4s;
-
-    animation-delay: 5s;
-
+    animation-delay: 3s;
     animation-iteration-count: infinite;
-
   }
-
   
-
   .div2_text3 {
-
     position: block;
-
-    color: #001e3e;
-
+    color: black;
     margin-left: 2.4vw;
-
     font-size: 60px;
-
     animation-name: opanim;
-
     animation-duration: 4s;
-
-    animation-delay: 7s;
-
+    animation-delay: 5s;
     animation-iteration-count: infinite;
-
   }
-
   
-
   .est {
-
     position: absolute;
-
     display: none;
-
     text-align: center;
-
     background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff, #ffffff, #c51e3e);
-
     margin-top: 55vh;
-
     padding-right: 10vw;
-
     height: 3vh;
-
     width: 60vw;
-
     font-family: 'Lucida Sans';
-
     font-weight: 300;
-
     font-size: 70px;
-
     vertical-align: middle;
-
     z-index: 3;
-
   }
 }
 @keyframes opanim{
-  0% { opacity: 1.0;}
+  0% { opacity: 1.0;color: black}
   50% { opacity: 0.0;}
-  100% { opacity: 1.0;}
+  100% { opacity: 1.0;color: black}
 }
