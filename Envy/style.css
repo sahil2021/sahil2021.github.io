@@ -55,7 +55,7 @@ body{
   
 }
 .div2_text1{
-   position: block;
+   display: block;
    color: black;
    font-weight: 300;
    margin-left: 2vw;
@@ -67,7 +67,7 @@ body{
    animation-iteration-count: infinite;
 }
 .div2_text2{
-   position: block;
+   display: block;
    color: black;
    font-weight: 10;
    margin-left: 2vw;
@@ -80,7 +80,7 @@ body{
    animation-iteration-count: infinite;
 }
 .div2_text3{
-   position: block;
+   display: block;
    color: black;
    margin-left: 2.4vw;
    font-family: 'Ubuntu';
