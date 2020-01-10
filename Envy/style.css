@@ -60,7 +60,7 @@ body{
    font-weight: 300;
    margin-left: 2vw;
    font-family: 'Ubuntu';
-   font-size: 31px;
+   font-size: 75px;
    animation-name: opanim; 
    animation-duration: 4s;
    animation-delay: 0.2s;
@@ -72,7 +72,7 @@ body{
    font-weight: 10;
    margin-left: 2vw;
    font-family: 'Ubuntu';
-   font-size: 34px; 
+   font-size: 60px; 
    font-weight: 300;
    animation-name: opanim;
    animation-duration: 4s;
@@ -84,7 +84,7 @@ body{
    color: black;
    margin-left: 2.4vw;
    font-family: 'Ubuntu';
-   font-size: 27px;
+   font-size: 50px;
    animation-name: opanim; 
    font-weight: 300;
    animation-duration: 4s;
@@ -169,7 +169,7 @@ body{
     position: block;
     color: black;
     margin-left: 2vw;
-    font-size: 69px;
+    font-size: 75px;
     animation-name: opanim;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -180,7 +180,7 @@ body{
     position: block;
     color: black;
     margin-left: 2vw;
-    font-size: 66px;
+    font-size: 60px;
     animation-name: opanim;
     animation-duration: 4s;
     animation-delay: 3s;
@@ -191,7 +191,7 @@ body{
     position: block;
     color: black;
     margin-left: 2.4vw;
-    font-size: 60px;
+    font-size: 50px;
     animation-name: opanim;
     animation-duration: 4s;
     animation-delay: 5s;
