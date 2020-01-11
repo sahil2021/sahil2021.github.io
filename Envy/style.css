@@ -60,7 +60,7 @@ body{
    font-weight: 300;
    margin-left: 2vw;
    font-family: 'Ubuntu';
-   font-size: 100px;
+   font-size: 80px;
    animation-name: opanim; 
    animation-duration: 4s;
    animation-delay: 0.2s;
@@ -72,7 +72,7 @@ body{
    font-weight: 10;
    margin-left: 2vw;
    font-family: 'Ubuntu';
-   font-size: 60px; 
+   font-size: 65px; 
    font-weight: 300;
    animation-name: opanim;
    animation-duration: 4s;
