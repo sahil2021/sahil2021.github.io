@@ -1,12 +1,27 @@
-window.onload= function() {
+window.onload = function(){
+  /*
 //var v = document.getElementById("div1_text");
-var d1t1= document.getElementById("div1_text1");
-var d2t1= document.getElementById("div2_text1");
-var d2t2= document.getElementById("div2_text2");
-var d2t3= document.getElementById("div2_text3");
-var style2 = [window.getComputedStyle(d2t1),                  window.getComputedStyle(d2t2),
-              window.getComputedStyle(d2t3)];
+var d1t1= document.getElementById("tag");
+var d = document.getElementById("tag").parentElement;
+//d.style.display = "none";*/
+console.log("yj");
+/*
+var style2 = window.getComputedStyle(d1t1);
 
+var h=style2.getPropertyValue('height');
+var w=style2.getPropertyValue('width');
+console.log(h);
+console.log(w);
+
+var p = document.createElement("p");
+p.style.fontSize = 45 + "px";
+p.style.position = "absolute";
+p.innerHTML = "Sahil";
+var f = window.getComputedStyle(p);
+document.body.appendChild(p);
+console.log(f.getPropertyValue('font-family'));
+p.style.display = "none";
+*/
 var temp =1.0;
 var t1=false, t2=false, t3=false;
 //var vh= $(window).height();
