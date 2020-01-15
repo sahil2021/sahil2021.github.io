@@ -28,7 +28,7 @@ for(var i=0; i<text.length; i++){
     $('.navbar').css('background','black');
   }
 
- setInterval(shiftLeft(),1000);
+ //setInterval(shiftLeft(),1000);
   
   var tst=document.getElementById("hmdt2");
   var root = document.getElementById("root");
