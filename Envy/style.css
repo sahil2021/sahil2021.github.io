@@ -3,10 +3,10 @@ body{
     font-size: 15pt;
     width: 100vw;
     font-family: 'Ubuntu';
-    background: linear-gradient(90deg,#000428,#004e92);
+    background: linear-gradient(-90deg,#051e3e,#051e3e);
 }
 .e{
-  font-size: 22px;
+  font-size: 17px;
   color: white;
   font-weight: 500;
 }
@@ -24,11 +24,10 @@ body{
 }
 .div1{
   display: block;
-  background: linear-gradient(45deg,#000428,#004e92);
+  background: #001e3e;
   height: 100vh;
   width: 50vw;
     
-  border-right: solid 4px #00001c;
   
   padding-top: 40vh;
 
@@ -47,16 +46,15 @@ body{
 }
 .div2{
   display: block;
-  background: linear-gradient(-45deg,#4b82b3,#99c9f2);
+  background:linear-gradient( #df1e3e,#f51e3e);
   height: 100vh;
   width: 50vw;
-  
   padding-top: 20vh;
   
 }
 .div2_text1{
-   display: block;
-   color: black;
+   position: block;
+   color: #001e3e;
    font-weight: 300;
    margin-left: 2vw;
    font-family: 'Ubuntu';
@@ -67,22 +65,21 @@ body{
    animation-iteration-count: infinite;
 }
 .div2_text2{
-   display: block;
-   color: black;
-   font-weight: 10;
+   position: block;
+   color: #001e3e;
+   font-weight: 300;
    margin-left: 2vw;
    font-family: 'Ubuntu';
-   font-size: 65px; 
-   font-weight: 300;
+   font-size:     65px; 
    animation-name: opanim;
    animation-duration: 4s;
    animation-delay: 5s;
    animation-iteration-count: infinite;
 }
 .div2_text3{
-   display: block;
-   color: black;
-   margin-left: 2.4vw;
+   position: block;
+   color: #001e3e;
+   margin-left: 2vw;
    font-family: 'Ubuntu';
    font-size: 50px;
    animation-name: opanim; 
@@ -106,13 +103,15 @@ body{
   z-index: 3;
 }
 .au-m{
-  height: 100vh;
-  width: 100vw;
-  
+  height: 92vh;
+  width: 90vw;
   padding-top: 15vh;
   padding-left: 5vw;
   padding-right: 5vw;
-  border-top: solid 2px black;
+  margin-top: 10vh;
+  top: 10vh;
+  margin-left: 5vw;
+  background-image: linear-gradient(180deg, #df1e3e, #ffb199);
 }
 .aum-h{
   font-family: 'Ubuntu';
@@ -122,7 +121,7 @@ body{
 }
 .aum-c{
   font-family: 'Ubuntu';
-  font-size: 18px;
+  font-size: 20px;
   color: white;
   margin-top: 3vh;
   font-weight: 100;
@@ -150,7 +149,7 @@ body{
 }
 @media only screen and (min-width: 600px) and (min-height: 300px){
   .e {
-    font-size: 35px;
+    font-size: 15px;
     color: white;
     font-weight: bolder;
   }
@@ -169,7 +168,7 @@ body{
     position: block;
     color: black;
     margin-left: 2vw;
-    font-size: 75px;
+    font-size: 80px;
     animation-name: opanim;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -180,7 +179,7 @@ body{
     position: block;
     color: black;
     margin-left: 2vw;
-    font-size: 60px;
+    font-size: 65px;
     animation-name: opanim;
     animation-duration: 4s;
     animation-delay: 3s;
@@ -215,7 +214,7 @@ body{
   }
 }
 @keyframes opanim{
-  0% { opacity: 1.0;color: black}
+  0% { opacity: 1.0;color: #001e3e}
   50% { opacity: 0.0;}
-  100% { opacity: 1.0;color: black}
+  100% { opacity: 1.0;color: #001e3e}
 }
