@@ -166,7 +166,7 @@ body{
   }
   .div2_text1 {
     position: block;
-    color: black;
+    color: #001e3e;
     margin-left: 2vw;
     font-size: 80px;
     animation-name: opanim;
@@ -177,7 +177,7 @@ body{
   
   .div2_text2 {
     position: block;
-    color: black;
+    color: #001e3e;
     margin-left: 2vw;
     font-size: 65px;
     animation-name: opanim;
@@ -188,7 +188,7 @@ body{
   
   .div2_text3 {
     position: block;
-    color: black;
+    color: #001e3e;
     margin-left: 2.4vw;
     font-size: 50px;
     animation-name: opanim;
