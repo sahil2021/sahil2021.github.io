@@ -111,7 +111,7 @@ body{
   margin-top: 10vh;
   top: 10vh;
   margin-left: 5vw;
-  background-image: linear-gradient(180deg, #df1e3e, #ffb199);
+  background-image: linear-gradient( #df1e3e,#f51e3e);
 }
 .aum-h{
   font-family: 'Ubuntu';
