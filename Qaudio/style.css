@@ -62,9 +62,9 @@ body {
 }
 .audio-thumbnail {
   display: block;
-  height: 40%;
-  width: 70%;
-  margin: 8% 15% 5%;
+  height: 30%;
+  width: 60%;
+  margin: 8% 20% 5%;
   background: black;
 }
 .audio-controls {
