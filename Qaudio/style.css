@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:100,300,300i,400,400i,500,500i,700,700i&display=swap');
+body {
+    font-size: 15pt;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#eec9d2, #ead5dc);
+}
+#repeat {
+  height: 4vh;
+  width: 4vh;
+  background-color: white;
+  border-radius: 100%;
+  /*border: 1px solid black;*/
+}
+#shuffle{
+  height: 4vh;
+  width: 4vh;
+  border-radius: 100%;
+  /*border: 1px solid black;*/
+}
+#play_pause{
+  height: 4vh;
+  width: 4vh;
+  border-radius: 100%;
+  /*border: 1px solid black;*/
+}
+#previous{
+  height: 4vh;
+  width: 4vh;
+  border-radius: 100%;
+  /*border: 1px solid black;*/
+}
+#next{
+  height: 4vh;
+  width: 4vh;
+  border-radius: 100%;
+  /*border: 1px solid black;*/
+}
+.audio-title-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 12%;
+  width: 100%;
+  padding-top: 2%;
+  padding-left: 4%;
+  background: linear-gradient(-45deg,#ffabb6,#c4b6c2);
+  text-align: left;
+  font-family: Ubuntu;
+  font-weight: 400;
+  letter-spacing: 0.3vw;
+  overflow: hidden;
+}
+.audio-name {
+  font-size: 1.2em;
+  color: #ffffff;
+  overflow: hidden;
+}
+.audio-artist-name {
+  font-size: 0.9em;
+  color: #ffffff;
+}
+.audio-thumbnail {
+  display: block;
+  height: 40%;
+  width: 70%;
+  margin: 8% 15% 5%;
+  background: black;
+}
+.audio-controls {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background: rgba(255, 171, 182, 0.3);
+  padding: 2vh 15vw;
+  height: 8vh;
+  width: 100%;
+}
+.system-config {
+  display: none;
+  position: absolute;
+  width: 10vw;
+  height: 40vh;
+  margin-top: 25%;
+  margin-right: 2vw;
+  right: 0;
+  border: 1px solid black;
+}
+
+.file-input{
+  display: block;
+  float: right;
+  height: 10%;
+  width: 10%;
+  outline: none;
+  margin: 1% 4% 1% 1%;
+  background: url("icons/add.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  padding-left: 10%;
+  overflow: hidden;
+}
+.custom-file-label{
+  font-family: 'Ubuntu';
+  font-size: 0.75em;
+}
+.playlist{
+  display: block;
+  margin-top: 2vh;
+  padding-left: 0;
+  height: 20vh;
+  width: 100vw;
+  overflow-x: scroll;
+  list-style: none;
+  /*border: 1px solid red;*/
+}
+.playlist-item{
+  height: 5vh;
+  width: 99%;
+  background: #edc2cc;
+  margin: 2px;
+  /*border: 1px solid black;
+  border-radius: 10px;*/
+}
+.playlist-item-img{
+  display: block;
+  position: relative;
+  float: left;
+  height: 4vh;
+  width: 4vh;
+  margin: 0.5vh auto 0.5vh 4%;
+  /*border: 1px solid white;*/
+}
+.playlist-item-name{
+  display: block;
+  position: relative;
+  font-family: "Ubuntu";
+  font-size: 0.8em;
+  height: 4vh;
+  width: 80%;
+  padding-top: 1vh;
+  margin: 0vh auto 0.5vh 15%;
+  text-align: center;
+  overflow: hidden;
+  /*border: 1px solid yellow;*/
+  color: black;
+}
+.err{
+  display: none;
+  height: 80px;
+  width: 100%;
+  background: black;
+  color: green;
+  padding: 3px;
+  border: 2px solid white;
+}
