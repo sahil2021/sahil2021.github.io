@@ -143,7 +143,7 @@ body {
   color: black;
 }
 .err{
-  display: block;
+  display: none;
   height: 80px;
   width: 100%;
   background: black;
