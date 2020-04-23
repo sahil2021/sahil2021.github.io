@@ -1,5 +1,5 @@
 window.onload= (function(){
- /* var text = [document.getElementById("hmdt1"), document.getElementById("hmdt2"),
+ /*var text = [document.getElementById("hmdt1"), document.getElementById("hmdt2"),
        document.getElementById("hmdt3"), 
        document.getElementById("hmdt4"), 
        document.getElementById("hmdt5"), 
@@ -30,7 +30,7 @@ for(var i=0; i<text.length; i++){
 
  //setInterval(shiftLeft(),1000);
   
-  var tst=document.getElementById("hmdt2");
+  //var tst=document.getElementById("hmdt2");
   var root = document.getElementById("root");
   var list = root.innerHTML;
   var i = 0,j = 0;
@@ -62,8 +62,7 @@ for(var i=0; i<text.length; i++){
   
   for(var k=0;k<id.length;k++){
   p = document.getElementById(id[k]);
-  console.log(id[k]);
-  pp = p.parentElement;
+  pp = p.parentNode;
   var f = window.getComputedStyle(p);
   var ifs = parseInt(f.getPropertyValue('font-size'));
   console.log(ifs);
