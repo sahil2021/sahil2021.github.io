@@ -1,32 +1,40 @@
-var h;
+var howlPool = [];
 var isP= false;
 var er = document.getElementById("err");
-var id;
-function createAudioObj(){
- /* document.getElementById("err").innerHTML = "yep" +"<br />"+ document.getElementById("audio_title_bar").innerHTML;;*/
-  var url = document.getElementById("audio_title_bar").getAttribute("data-url");
-  h = new Howl({
+var id = [];
+var howlIndex = -1;
+var previousINX = null;
+
+function createAudioObj(url){
+  
+ /*document.getElementById("err").innerHTML = "yep" +"<br />"+ document.getElementById("audio_title_bar").innerHTML+'<br />'+er.innerHTML;*/
+   er.innerHTML = url + "<br />" +er.innerHTML;
+   howlPool[++howlIndex] = new Howl({
     src: [url],
     html5: true,
     format: "mp3"
   });
+  
 }
 
-function playPause(){
-  
+function playAudio(iNX){
  try{
- //er.innerHTML = er.innerHTML +'<br />' + isPlaying();
- if(!isPlaying()){
-   id = h.play();
-   isP = true;
-  // er.innerHTML =  er.innerHTML +'<br />' + isPlaying() + "Play";
- }else{
-   h.stop();
-   isP = false;''
-  // er.innerHTML =  er.innerHTML +'<br />' + isPlaying()+ "stop";
-}}catch(error){
+   if(previousINX !== null){
+     stopAudio(previousINX);
+   }
+    id[iNX] = howlPool[iNX].play();
+    previousINX = iNX;
+}catch(error){
    er.innerHTML= er.innerHTML+'<br />'+ error.stack;
  }
+}
+
+function pauseAudio(iNX){
+  howlPool[iNX].pause(id[iNX]);
+}
+
+function stopAudio(iNX){
+  howlPool[iNX].stop(id[iNX]);
 }
 
 function isPlaying(){
