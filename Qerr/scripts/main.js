@@ -1,38 +1,42 @@
-
 var files;
-var id = [];
+var pid = [];
 var index = 0;
 var u= "";
-var index = 0;
 var err = document.getElementById("err");
+
 function handleFileSelect(evt) {
-  
+    //err.innerHTML = "ok";
     files = evt.target.files;
-    for (var i = 0; i<files.length; i++) {
-        var file = files[i];
-        var url = file.urn; 
-        u = URL.createObjectURL(file);
-        err.innerHTML = err.innerHTML +"<br />"+ u;
-        ID3.loadTags(url, function(){
-        showTags(url);
-        }, {
+    for (var i = 0; i < files.length; i++) {
+      var file = files[i];
+      var url = file.urn;
+      try{
+      ID3.loadTags(url, function() {
+        showTags(url, URL.createObjectURL(file));
+      }, {
         tags: ["title", "artist", "album", "picture"],
         dataReader: ID3.FileAPIReader(file)
-        });
-      
+      });
+    
+    }catch(error){
+      err.innerHTML = error;
     }
+    
   }
+}
   
-function showTags(url) {
+function showTags(url,fileUrl) {
+  //err.innerHTML = err.innerHTML +"<br />"+fileUrl;
   var tags = ID3.getAllTags(url);
   ID3.clearTags(url);
   var tId = sHash(tags.title);
-  err.innerHTML = err.innerHTML +"<br />"+tags.title+"<br />"+ u;
+  //err.innerHTML = err.innerHTML +"<br />"+ "ok1";
+  //err.innerHTML = err.innerHTML +"<br />"+tags.title+"<br />"+ fileUrl;
   if(tags.title == undefined || isAlreadyPresent(tId) ){
     //do nothing
   }else{
-   id[index] = tId;
-   index++;
+   pid[index] = tId;
+   createAudioObj(fileUrl);
   //err.innerHTML = err.innerHTML+'<br \>'+tags.title;
   var image = tags.picture;
   if (image) {
@@ -50,8 +54,11 @@ function showTags(url) {
   var li = document.createElement("li");
   li.setAttribute("class", "playlist-item");
   li.setAttribute("id", tId);
-  li.setAttribute("data-url",u);
+  li.setAttribute("data-url",fileUrl);
+  li.setAttribute("data-index",index++);
   li.setAttribute("data-artist",tags.artist || tags.album || " ");
+  //err.innerHTML = err.innerHTML +"<br />"+ 'ok2';
+  /*err.innerHTML = li.getAttribute('data-url') +"<br />"+ err.innerHTML;*/
   li.setAttribute("data-album",tags.album);
   li.setAttribute("data-title",tags.title);
   li.setAttribute("onClick","loadSong(this)");
@@ -90,9 +97,9 @@ function isAlreadyPresent(tId){
   var a = parseInt(tId);   
   var b = 123;
   
-  for(var i = 0; i<id.length;i++){
+  for(var i = 0; i<pid.length;i++){
    
-    b = parseInt(id[i]);
+    b = parseInt(pid[i]);
     if(a == b)
     {
       return true;
@@ -102,5 +109,6 @@ function isAlreadyPresent(tId){
   }
   return false;
 }
+
 
 document.getElementById('file_input').addEventListener('change', handleFileSelect, false);
