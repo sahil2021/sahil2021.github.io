@@ -34,16 +34,16 @@
   <img class="audio-thumbnail" id="audio_thumbnail" src="icons/none.jpg" alt="Thumbnail of current playing audio" />
 
   
-  <audio id="audio_src" src="#"></audio>
+  <input type="range" class="seekbar" id="seekbar" min="0" max="100" />
   
   <div class="player-controller" id="player_controller">
     
     <div class="audio-controls" id="audio_controls">
-      <img src="icons/shuffle.svg" id="shuffle" alt="Shuffle Playlist" />
-      <img src="icons/previous.svg" id="previous" alt="Play Previous" />
-      <img src="icons/play.svg" id="play_pause" alt="Play or Pause or Resume" onclick="ghi()"/>
-      <img src="icons/next.svg" id="next" alt="Play Next" />
-      <img src="icons/repeat.svg" id="repeat" alt="Allow Repeat" />
+      <img src="icons/shuffle.svg" class="audio-controller" id="shuffle" alt="Shuffle Playlist" onclick="shuffle()"/>
+      <img src="icons/previous.svg" class="audio-controller" id="previous" alt="Play Previous" onclick="previous()"/>
+      <img src="icons/play.svg" class="audio-controller" id="play_pause" alt="Play or Pause or Resume" onclick="playPause()"/>
+      <img src="icons/next.svg" class="audio-controller" id="next" alt="Play Next" onclick="next()"/>
+      <img src="icons/repeat.svg" class="audio-controller" id="repeat" alt="Allow Repeat" data-type="all" onclick="repeat()"/>
     </div>
   </div>
   <div class="playlist-panel" id="playlist_panel">      <input type="file" class="file-input" accept="audio/*" id="file_input" 
@@ -56,7 +56,7 @@
   <label class="err" id="err"></label>
   <!-- Project -->
   <script src="scripts/main.js" type="text/javascript"></script>
-  <script src="scripts/action.js" type="text/javascript"></script>
   <script src="scripts/audio.js" type="text/javascript"></script>
+  <script src="scripts/action.js" type="text/javascript"></script>
 </body>
 </html>
