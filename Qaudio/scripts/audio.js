@@ -90,10 +90,10 @@ function playAudio(iNX,dir){
    //er.innerHTML = er.innerHTML + previousINX+" 4 "+currentINX+" 5 "+nextINX;
     id[iNX] = howlPool[iNX].play();
     previousPlaying = iNX;
-    var duration = parseInt(howlPool[currentINX].duration(id[currentINX]));
+    /*var duration = parseInt(howlPool[currentINX].duration(id[currentINX]));
     seekBar.max = duration;
     rqf = true;
-    window.requestAnimationFrame(seekPlayback);
+    window.requestAnimationFrame(seekPlayback);*/
     
   }catch(error){
    er.innerHTML= er.innerHTML+'<br />'+ error.stack;
