@@ -9,6 +9,8 @@ var playlist;
 window.onload = function (){
   seekBar = document.getElementById('seekbar');
   playlist = document.getElementById("playlist").childNodes;
+  seekBar.addEventListener('change', seekInput, false);
+  document.getElementById('file_input').addEventListener('change', handleFileSelect, false);
 }
 
 function handleFileSelect(evt) {
@@ -113,4 +115,3 @@ function isAlreadyPresent(tId) {
 }
 
 
-document.getElementById('file_input').addEventListener('change', handleFileSelect, false);
