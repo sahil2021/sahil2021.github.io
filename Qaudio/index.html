@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Sahil S Mayekar" />
-  <meta name="description" content="Web Interfaced Music Player For Quick Accessed" />
+  <meta name="description" content="Web Interfaced Music Player For Quick Access" />
   <script src="scripts/id3-minimized.js"></script>
   <script src="scripts/howler.js"></script>
   <title>QAUDIO</title>
@@ -24,7 +24,7 @@
 <body>
   
   <div class="audio-title-bar" data-url="" id="audio_title_bar">
-    <h3 class="audio-name" id="audio_name">Playing Song with QAUDIO</h3>
+    <h3 class="audio-name" id="audio_name"><b>QA</b>UDIO</h3>
     <h5 class="audio-artist-name" id="audio_artist_name">By Envics</h5>
   </div>
   
@@ -32,7 +32,7 @@
   <img class="audio-thumbnail" id="audio_thumbnail" src="icons/none.jpg" alt="Thumbnail of current playing audio" />
 
   
-  <input type="range" class="seekbar" id='seekbar' min='0' value="0" oninput="seekbarInput()"/>
+  <input type="range" class="seekbar" id='seekbar' min='0' value="0" step="1"/>
   
   <div class="player-controller" id="player_controller">
     
