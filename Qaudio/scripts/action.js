@@ -1,6 +1,6 @@
 var repeatState = false;
 function loadSong(li){
-  er.innerHTML = er.innerHTML + previousINX+" "+currentINX+' '+nextINX+'</br>';
+  //er.innerHTML = er.innerHTML + previousINX+" "+currentINX+' '+nextINX+'</br>';
   try{
   var iNX = li.getAttribute("data-index");
   if(iNX == currentINX){
@@ -14,7 +14,7 @@ function loadSong(li){
   }
 }
 function loadInfo(li){
-  er.innerHTML = er.innerHTML + previousINX+" "+currentINX+' '+nextINX+'</br>';
+ // er.innerHTML = er.innerHTML + previousINX+" "+currentINX+' '+nextINX+'</br>';
   var c = li.childNodes;
    document.getElementById("audio_name").innerHTML = li.getAttribute("data-title") || " ";
   document.getElementById("audio_artist_name").innerHTML = li.getAttribute("data-artist") || " ";
@@ -66,10 +66,10 @@ function repeat(){
 function seekPlayback(){
   var pos = howlPool[currentINX].seek(id[currentINX]);
   seekBar.value = pos;
+
 }
 
 function seekInput() { 
   var cVal = seekBar.value;
-  howlPool[currentINX].seek(cVal*1000,id[currentINX]);
+  howlPool[currentINX].seek(cVal,id[currentINX]);
 }
-//seekBar.addEventListener('change', seekInput, false);
