@@ -7,8 +7,7 @@ var previousINX = -1;
 var currentINX = -1;
 var nextINX = -1;
 var previousPlaying = -1;
-var rqf = false;
-
+var intvId;
 function createAudioObj(url){
   
    howlPool[++howlIndex] = new Howl({
@@ -18,20 +17,24 @@ function createAudioObj(url){
   });
   var tHowl = howlPool[howlIndex];
   tHowl.on('end',function(){
-    //er.innerHTML = "Finished";
     if(repeatState == false){
       next();
     }else{
       id[currentINX] = howlPool[currentINX].play();
     }
+    clearInterval(invtId);
   });
   tHowl.on('pause',function(){
     document.getElementById("play_pause").src = "icons/play.svg";
+    clearInterval(invtId)
   });
   tHowl.on('play',function(){
     document.getElementById("play_pause").src = "icons/pause.svg";
+    var duration = parseInt(howlPool[currentINX].duration(id[currentINX]));
+    seekBar.max = duration;
+    invtId = setInterval(seekPlayback,1000);
     
-  });
+  })
 }
 
 function playAudio(iNX,dir){
@@ -64,8 +67,9 @@ function playAudio(iNX,dir){
      }
      //er.innerHTML = er.innerHTML + previousINX+" 2 "+currentINX +" 1 "+nextINX;
    }else if(iNX == 0){
-     //er.innerHTML = er.innerHTML + previousINX+" 3 "+currentINX;
+    //er.innerHTML = er.innerHTML + previousINX+" "+currentINX+' '+nextINX+'</br>'';
      previousINX = howlPool.length - 1;
+     currentINX = iNX;
      nextINX = 1;
      if (dir == 0) {
        stopAudio(previousINX);
@@ -90,10 +94,6 @@ function playAudio(iNX,dir){
    //er.innerHTML = er.innerHTML + previousINX+" 4 "+currentINX+" 5 "+nextINX;
     id[iNX] = howlPool[iNX].play();
     previousPlaying = iNX;
-    /*var duration = parseInt(howlPool[currentINX].duration(id[currentINX]));
-    seekBar.max = duration;
-    rqf = true;
-    window.requestAnimationFrame(seekPlayback);*/
     
   }catch(error){
    er.innerHTML= er.innerHTML+'<br />'+ error.stack;
