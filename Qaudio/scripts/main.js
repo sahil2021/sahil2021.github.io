@@ -4,9 +4,11 @@ var songsCollection = [];
 var index = 0;
 var err = document.getElementById("err");
 var seekBar;
+var playlist;
 
 window.onload = function (){
   seekBar = document.getElementById('seekbar');
+  playlist = document.getElementById("playlist").childNodes;
 }
 
 function handleFileSelect(evt) {
