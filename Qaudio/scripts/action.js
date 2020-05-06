@@ -30,15 +30,17 @@ function playPause(){
 }
 
 function next(){
+  var d = 0;
   if(nextINX == -1){
     //do nothing 
   }else{
     if (shuffleState == true) {
       nextINX = Math.floor(Math.random() * howlPool.length);
+      d = 2;
     }
 
     loadInfo(playlist[parseInt(nextINX)+1]);
-    playAudio(nextINX,0);
+    playAudio(nextINX,d);
   }
 }
 
