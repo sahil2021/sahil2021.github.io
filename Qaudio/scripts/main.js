@@ -2,14 +2,16 @@ var files = [];
 var pid = [];
 var songsCollection = [];
 var index = 0;
-var err = document.getElementById("err");
+var er;
 var seekBar;
 var playlist;
 
 window.onload = function (){
   seekBar = document.getElementById('seekbar');
   playlist = document.getElementById("playlist").childNodes;
-  seekBar.addEventListener('change', seekInput, false);
+  er = document.getElementById("err");
+  
+  seekBar.addEventListener('input', seekInput, false);
   document.getElementById('file_input').addEventListener('change', handleFileSelect, false);
 }
 
@@ -19,9 +21,8 @@ function handleFileSelect(evt) {
 
   for (var i = 0; i < files.length; i++) {
     var file = files[i];
-    //
     var url = "";
-    //err.innerHTML = err.innerHTML + "<br />" + file.name;
+    
     ID3.loadTags(url, function(file) {
       showTags(url, URL.createObjectURL(file));
     }, {
@@ -34,13 +35,15 @@ function handleFileSelect(evt) {
 
 function showTags(url, u) {
   try {
-    //err.innerHTML = err.innerHTML + u;
     var tags = ID3.getAllTags(url);
     ID3.clearAll();
+    
     var tId = sHash(tags.title);
+    
     if (tags.title == undefined || isAlreadyPresent(tId)) {
-      //do nothing
+      //file may not be a mp3, so do nothing
       }else {
+      
       pid[index] = tId;
       createAudioObj(u);
       var image = tags.picture;
@@ -113,5 +116,3 @@ function isAlreadyPresent(tId) {
   }
   return false;
 }
-
-
