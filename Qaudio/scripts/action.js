@@ -1,4 +1,5 @@
 var repeatState = false;
+var shuffleState = false;
 function loadSong(li){
   //er.innerHTML = er.innerHTML + previousINX+" "+currentINX+' '+nextINX+'</br>';
   try{
@@ -32,6 +33,10 @@ function next(){
   if(nextINX == -1){
     //do nothing 
   }else{
+    if (shuffleState == true) {
+      nextINX = Math.floor(Math.random() * howlPool.length);
+    }
+
     loadInfo(playlist[parseInt(nextINX)+1]);
     playAudio(nextINX,0);
   }
@@ -47,8 +52,15 @@ function previous(){
 }
 
 function shuffle(){
+  var shuffle = document.getElementById('shuffle');
   
-}
+  if (shuffleState == true) {
+    shuffle.style.background = 'transparent';
+    shuffleState = false;
+  } else {
+    shuffle.style.background = 'white';
+    shuffleState = true;
+  }
 
 function repeat(){
   var repeat = document.getElementById('repeat');
