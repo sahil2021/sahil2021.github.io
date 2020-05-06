@@ -54,10 +54,10 @@ function shuffle(){
   var shuffle = document.getElementById('shuffle');
   
   if (shuffleState == true) {
-    shuffle.style.background = 'transparent';
+    shuffle.src = 'icons/shuffle.svg';
     shuffleState = false;
   } else {
-    shuffle.style.background = 'white';
+    shuffle.src = 'icons/shuffleS.svg';
     shuffleState = true;
   }
 }
@@ -66,10 +66,10 @@ function repeat(){
   var repeat = document.getElementById('repeat');
   
   if(repeatState == true){
-     repeat.style.background = 'transparent';
+     repeat.src = 'icons/repeat.svg';
      repeatState = false;
   }else{
-     repeat.style.background = 'white';
+     repeat.src = 'icons/repeatS.svg';
      repeatState = true;
   }
   
