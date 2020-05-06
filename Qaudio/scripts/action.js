@@ -8,7 +8,7 @@ function loadSong(li){
     //do nothing; 
    }else{
     loadInfo(li);
-    playAudio(iNX,2);
+    playAudio(iNX);
    }
   }catch(err){
     document.getElementById("err").innerHTML = err.stack;
@@ -30,17 +30,14 @@ function playPause(){
 }
 
 function next(){
-  var d = 0;
   if(nextINX == -1){
     //do nothing 
   }else{
     if (shuffleState == true) {
       nextINX = Math.floor(Math.random() * howlPool.length);
-      d = 2;
     }
-
     loadInfo(playlist[parseInt(nextINX)+1]);
-    playAudio(nextINX,d);
+    playAudio(nextINX);
   }
 }
 
@@ -49,7 +46,7 @@ function previous(){
     //do nothing
   }else{
     loadInfo(playlist[parseInt(previousINX)+1]);
-    playAudio(previousINX,1);
+    playAudio(previousINX);
   }
 }
 
@@ -63,6 +60,7 @@ function shuffle(){
     shuffle.style.background = 'white';
     shuffleState = true;
   }
+}
 
 function repeat(){
   var repeat = document.getElementById('repeat');
