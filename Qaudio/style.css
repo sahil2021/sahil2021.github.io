@@ -3,7 +3,7 @@ body {
     font-size: 15pt;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(#eec9d2, #ead5dc);
+    background: linear-gradient(#85cbcc, #abdee0);
 }
 #repeat {
   height: 4vh;
@@ -44,7 +44,7 @@ body {
   width: 100%;
   padding-top: 2%;
   padding-left: 4%;
-  background: linear-gradient(-45deg,#ffabb6,#c4b6c2);
+  background: linear-gradient(-45deg,#205072,#329d9c);
   text-align: left;
   font-family: Ubuntu;
   font-weight: 400;
@@ -75,7 +75,7 @@ body {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  background: rgba(255, 171, 182, 0.3);
+  background: #abdee0;
   padding: 1.5vh 15vw;
   height: 7vh;
   width: 100%;
