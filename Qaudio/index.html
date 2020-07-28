@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=0.8 " />
+  <meta name="viewport" content="width=device-width, initial-scale=1 " />
   <meta name="author" content="Sahil S Mayekar" />
   <meta name="description" content="Web Interfaced Music Player For Quick Access" />
   <script src="scripts/id3-minimized.js"></script>
@@ -22,13 +22,12 @@
 </head>
 
 <body>
-  
   <div class="audio-title-bar" data-url="" id="audio_title_bar">
     <h3 class="audio-name" id="audio_name">QAUDIO</h3>
     <h5 class="audio-artist-name" id="audio_artist_name"></h5>
   </div>
-  
-  
+  <div class="fb">
+  <div class="comp">
   <img class="audio-thumbnail" id="audio_thumbnail" src="icons/none.jpg" alt="Thumbnail of current playing audio" />
 
   
@@ -44,12 +43,14 @@
       <img src="icons/repeat.svg" class="audio-controller" id="repeat" alt="Allow Repeat" data-type="all" onclick="repeat()"/>
     </div>
   </div>
+  </div>
   <div class="playlist-panel" id="playlist_panel">      <input type="file" class="file-input" accept="audio/*" id="file_input" 
     multiple />
     
     <ul class="playlist" id="playlist">
      
     </ul>
+  </div>
   </div>
   <label class="err" id="err"></label>
   <!-- Project -->
