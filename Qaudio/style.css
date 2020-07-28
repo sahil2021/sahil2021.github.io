@@ -296,38 +296,43 @@ input[type=range]:focus::-ms-fill-upper {
   }
   
   #repeat {
-    height: 4vh;
-    width: 4vh;
+    height: 8vh;
+    width: 8vh;
     background-color: transparent;
     border-radius: 100%;
+    margin: 10px;
     /*border: 1px solid black;*/
   }
   
   #shuffle {
-    height: 4vh;
-    width: 4vh;
+    height: 8vh;
+    width: 8vh;
     border-radius: 100%;
+    margin: 10px
     /*border: 1px solid black;*/
   }
   
   #play_pause {
-    height: 4vh;
-    width: 4vh;
+    height: 8vh;
+    width: 8vh;
     border-radius: 100%;
+    margin: 10px;
     /*border: 1px solid black;*/
   }
   
   #previous {
-    height: 4vh;
-    width: 4vh;
+    height: 8vh;
+    width: 8vh;
     border-radius: 100%;
+    margin: 10px;
     /*border: 1px solid black;*/
   }
   
   #next {
-    height: 4vh;
-    width: 4vh;
+    height: 8vh;
+    width: 8vh;
     border-radius: 100%;
+    margin: 10px;
     /*border: 1px solid black;*/
   }
   
@@ -418,18 +423,18 @@ input[type=range]:focus::-ms-fill-upper {
   
   .playlist {
     display: block;
-    margin-top: 1vh;
+    margin-top: 2%;
     padding-left: 0;
-    height: 32vh;
-    width: 100vw;
+    height: 88%;
+    width: 100%;
     overflow-x: scroll;
     list-style: none;
     /*border: 1px solid red;*/
   }
   
   .playlist-item {
-    height: 5vh;
-    width: 99%;
+    height: 7%;
+    width: 100%;
     background: #abdee0;
     margin: 2px;
     /*border: 1px solid black;
@@ -440,8 +445,8 @@ input[type=range]:focus::-ms-fill-upper {
     display: block;
     position: relative;
     float: left;
-    height: 4vh;
-    width: 4vh;
+    height: 5vh;
+    width: 5vh;
     margin: 0.5vh auto 0.5vh 4%;
     /*border: 1px solid white;*/
   }
@@ -451,7 +456,7 @@ input[type=range]:focus::-ms-fill-upper {
     position: relative;
     font-family: "Ubuntu";
     font-size: 0.8em;
-    height: 4vh;
+    height: 5vh;
     width: 80%;
     padding-top: 1vh;
     margin: 0vh auto 0.5vh 15%;
