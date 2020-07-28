@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:100,300,300i,400,400i,500,500i,700,700i&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 body {
     font-size: 15pt;
     height: 100vh;
@@ -88,7 +94,6 @@ body {
   margin-top: 25%;
   margin-right: 2vw;
   right: 0;
-  border: 1px solid black;
 }
 
 .file-input{
@@ -267,4 +272,318 @@ input[type=range]::-ms-fill-upper {
 
 input[type=range]:focus::-ms-fill-upper {
   background: #000000;
+}
+
+@media screen and (min-aspect-ratio: 1/1)  {
+  
+  .fb {
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .comp{
+    display: flex;
+    height: 100%;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5vh;
+  }
+  
+  #repeat {
+    height: 4vh;
+    width: 4vh;
+    background-color: transparent;
+    border-radius: 100%;
+    /*border: 1px solid black;*/
+  }
+  
+  #shuffle {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 100%;
+    /*border: 1px solid black;*/
+  }
+  
+  #play_pause {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 100%;
+    /*border: 1px solid black;*/
+  }
+  
+  #previous {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 100%;
+    /*border: 1px solid black;*/
+  }
+  
+  #next {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 100%;
+    /*border: 1px solid black;*/
+  }
+  
+  .audio-title-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 15vh;
+    width: 100vw;
+    padding-top: 2vh;
+    padding-left: 4vw;
+    background: linear-gradient(-45deg, #205072, #329d9c);
+    text-align: left;
+    font-family: Ubuntu;
+    font-weight: 400;
+    letter-spacing: 2px;
+    overflow: hidden;
+  }
+  
+  .mq {
+    max-height: 40%;
+  }
+  
+  .audio-name {
+    max-height: 80%;
+    font-size: 0.8em;
+    color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .audio-artist-name {
+    font-size: 0.6em;
+    color: #ffffff;
+  }
+  
+  .audio-thumbnail {
+    display: block;
+    height: 35%;
+    width: 35%;
+    margin: 4% 12% 2%;
+    background: black;
+  }
+  
+  .audio-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: #abdee0;
+    padding: 1.5vh 15vw;
+    height: 7vh;
+    width: 100%;
+  }
+  
+  /*.system-config {
+    display: none;
+    position: absolute;
+    width: 10vw;
+    height: 40vh;
+    margin-top: 25%;
+    margin-right: 2vw;
+    right: 0;
+    border: 1px solid black;
+  }*/
+  
+  .file-input {
+    display: block;
+    float: right;
+    height: 10%;
+    width: 10%;
+    outline: none;
+    margin: 1% 4% 1% 1%;
+    background: url("icons/add.svg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    padding-left: 10%;
+    overflow: hidden;
+  }
+  
+  .custom-file-label {
+    font-family: 'Ubuntu';
+    font-size: 0.75em;
+  }
+  .playlist-panel{
+    height: 100%;
+    width: 50vw;
+  }
+  
+  .playlist {
+    display: block;
+    margin-top: 1vh;
+    padding-left: 0;
+    height: 32vh;
+    width: 100vw;
+    overflow-x: scroll;
+    list-style: none;
+    /*border: 1px solid red;*/
+  }
+  
+  .playlist-item {
+    height: 5vh;
+    width: 99%;
+    background: #abdee0;
+    margin: 2px;
+    /*border: 1px solid black;
+    border-radius: 10px;*/
+  }
+  
+  .playlist-item-img {
+    display: block;
+    position: relative;
+    float: left;
+    height: 4vh;
+    width: 4vh;
+    margin: 0.5vh auto 0.5vh 4%;
+    /*border: 1px solid white;*/
+  }
+  
+  .playlist-item-name {
+    display: block;
+    position: relative;
+    font-family: "Ubuntu";
+    font-size: 0.8em;
+    height: 4vh;
+    width: 80%;
+    padding-top: 1vh;
+    margin: 0vh auto 0.5vh 15%;
+    text-align: center;
+    overflow: hidden;
+    /*border: 1px solid yellow;*/
+    color: black;
+  }
+  
+  .err {
+    display: none;
+    min-height: 80px;
+    width: 100%;
+    overflow: scroll;
+    background: black;
+    color: green;
+    padding: 3px;
+    border: 2px solid white;
+  }
+  
+  .audio-controller {
+    background-color: transparent;
+    background-position: center;
+    transition: background 0.8s;
+  }
+  
+  .audio-controller:hover {
+    background: transparent radial-gradient(circle, transparent 1%, rgba(255, 255, 255, 0.6) 1%)center/15000%;
+  }
+  
+  .audio-controller:active {
+    background-color: transparent;
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
+  input[type=range] {
+    -webkit-appearance: none;
+    margin: 5vh 2vw 5vh 2vw;
+    height: 2.5%;
+    width: 90%;
+    background: transparent;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+  input[type=range]:focus {
+    outline: none;
+  }
+  
+  
+  input[type=range]::-ms-track {
+    width: 90%;
+    cursor: pointer;
+    height: 3px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    margin-top: -6px;
+  }
+  
+  input[type=range]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+  }
+  
+  input[type=range]::-ms-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 90%;
+    height: 3px;
+    cursor: pointer;
+    background: #000000;
+    border-radius: 1.3px;
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #000000;
+  }
+  
+  input[type=range]::-moz-range-track {
+    width: 90%;
+    height: 3px;
+    cursor: pointer;
+    background: #000000;
+    border-radius: 1.3px;
+  }
+  
+  input[type=range]::-ms-track {
+    width: 90%;
+    height: 3px;
+    cursor: pointer;
+    background: #000000;
+    border-radius: 1.3px;
+  }
+  
+  input[type=range]::-ms-fill-lower {
+    background: #000000;
+    border-radius: 2.6px;
+  }
+  
+  input[type=range]:focus::-ms-fill-lower {
+    background: #000000;
+  }
+  
+  input[type=range]::-ms-fill-upper {
+    background: #000000;
+    border-radius: 2.6px;
+  }
+  
+  input[type=range]:focus::-ms-fill-upper {
+    background: #000000;
+  }
 }
