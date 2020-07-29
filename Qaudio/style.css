@@ -293,6 +293,7 @@ input[type=range]:focus::-ms-fill-upper {
     justify-content: flex-start;
     align-items: center;
     padding-top: 5vh;
+    
   }
   
   #repeat {
@@ -425,7 +426,7 @@ input[type=range]:focus::-ms-fill-upper {
     display: block;
     margin-top: 2%;
     padding-left: 0;
-    height: 88%;
+    height: 98%;
     width: 100%;
     overflow-x: scroll;
     list-style: none;
@@ -433,21 +434,21 @@ input[type=range]:focus::-ms-fill-upper {
   }
   
   .playlist-item {
-    height: 7%;
+    height: 10vh;
     width: 100%;
     background: #abdee0;
     margin: 2px;
     /*border: 1px solid black;
-    border-radius: 10px;*/
+    /*border-radius: 10px;*/
   }
   
   .playlist-item-img {
     display: block;
     position: relative;
     float: left;
-    height: 5vh;
-    width: 5vh;
-    margin: 0.5vh auto 0.5vh 4%;
+    height: 9vh;
+    width: 9vh;
+    margin-left: 5px;
     /*border: 1px solid white;*/
   }
   
@@ -456,10 +457,10 @@ input[type=range]:focus::-ms-fill-upper {
     position: relative;
     font-family: "Ubuntu";
     font-size: 0.8em;
-    height: 5vh;
+    height: 8vh;
     width: 80%;
     padding-top: 1vh;
-    margin: 0vh auto 0.5vh 15%;
+    margin-left: 5px;
     text-align: center;
     overflow: hidden;
     /*border: 1px solid yellow;*/
