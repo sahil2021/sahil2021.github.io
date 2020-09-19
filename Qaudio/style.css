@@ -376,7 +376,9 @@ input[type=range]:focus::-ms-fill-upper {
     margin: 4% 12% 2%;
     background: black;
   }
-  
+  .player-controller{
+    width: 100%;
+  }
   .audio-controls {
     display: flex;
     align-items: center;
@@ -462,6 +464,7 @@ input[type=range]:focus::-ms-fill-upper {
     width: 80%;
     padding-top: 1vh;
     margin-left: 5px;
+    padding-left: -10px;
     text-align: center;
     overflow: hidden;
     /*border: 1px solid yellow;*/
